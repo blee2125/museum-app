@@ -5,8 +5,9 @@ const SearchResult = (props) => {
     //console.log(props)
     return(
         <div>
+        <a href={props.searchResult.content.descriptiveNonRepeating.guid || props.searchResult.content.descriptiveNonRepeating.record_link} activeClassName="active">{props.searchResult.title}</a>
         
-            <p>{props.searchResult.title}</p>
+        
         </div>
     )
 }
